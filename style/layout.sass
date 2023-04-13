@@ -1,0 +1,78 @@
+@import reset
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap)
+
+html, body
+  height: 100%
+  width: 100%
+  
+body
+  font-family: 'Source Sans Pro'
+  display: flex
+  flex-direction: column
+
+h1
+  font-size: 2em
+
+h2
+  font-size: 1.75em
+
+em
+  font-style: italic
+
+header
+  background-color: rgb(33, 61, 28)
+  color: rgb(253, 194, 15)
+  display: grid
+  flex: 0 0 92px
+  grid-template-columns: auto auto
+
+  .logo
+    display: flex
+
+    img
+      // 25% lockup per branding guide
+      padding: 25px
+
+    .text
+      align-self: center
+
+      h1
+        margin-bottom: 0.25em
+
+  nav
+    align-self: center
+    display: flex
+    justify-content: space-evenly
+
+    a
+      color: rgb(255, 255, 255) !important
+
+main
+  flex: 1
+
+  .button
+    background-color: rgb(33, 61, 28)
+    padding: 1em
+    margin: 0em 0
+    color: rgb(253, 194, 15)
+    line-height: 4em
+
+footer
+  background-color: rgb(33, 61, 28)
+  color: rgb(255, 255, 255) !important
+  padding: 1em
+  padding-left: 25px
+  display: grid
+  flex: 0 0 92px
+  grid-template-columns: auto auto auto
+
+  a
+    color: rgb(255, 255, 255) !important
+
+  nav
+    display: flex
+    flex-direction: column
+    align-self: center
+    
+    a
+      flex: 1

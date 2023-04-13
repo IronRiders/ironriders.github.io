@@ -1,0 +1,29 @@
+{
+  "name": "ironriders.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronRiders/IronRiders.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IronRiders/IronRiders.github.io/issues"
+  },
+  "homepage": "https://github.com/IronRiders/IronRiders.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0"
+  },
+  "dependencies": {
+    "eleventy-sass": "^2.2.1",
+    "sass": "^1.60.0"
+  }
+}
