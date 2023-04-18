@@ -1,28 +1,20 @@
 const eleventySass = require('eleventy-sass');
-
+const glob = require('glob');
 const Image = require('@11ty/eleventy-img');
+const path = require('path');
 
 (async () => {
-	let url = './assets/logo.png';
-	let stats = await Image(url, {
-    filenameFormat: function (id, src, width, format, options) { 
-      return `logo-${width}.${format}`;
-    },
-    outputDir: './docs/img/',
-    formats:['png'],
-		widths: [100, 300]
-	});
-})();
-
-(async () => {
-	let url = './assets/teampic_2019.webp';
-	let stats = await Image(url, {
-    filenameFormat: function (id, src, width, format, options) { 
-      return `teampic_2019-${width}.${format}`;
-    },
-    outputDir: './docs/img/',
-    formats:['jpg']
-	});
+  let images = glob.globSync('./assets/*.{jpg,jpeg,png,webp}')
+  images.forEach(file => {
+    Image(file, {
+      filenameFormat: function (id, src, width, format, options) { 
+        return `${path.parse(src).name}-${width}.${format}`;
+      },
+      outputDir: './docs/img/',
+      formats:['png'],
+      widths: [100, 500, "auto"]
+    })
+  });
 })();
 
 module.exports = function(eleventyConfig) {
