@@ -12,7 +12,7 @@ const path = require('path');
       },
       outputDir: './docs/img/',
       formats:['png'],
-      widths: [100, 500, "auto"]
+      widths: [100, 250, 500, "auto"]
     })
   });
 })();
