@@ -10,7 +10,7 @@ const path = require('path');
       filenameFormat: function (id, src, width, format, options) { 
         return `${path.parse(src).name}-${width}.${format}`;
       },
-      outputDir: './docs/img/',
+      outputDir: './site/img/',
       formats:['png'],
       widths: [100, 250, 500, "auto"]
     })
@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      output: 'docs'
+      output: 'site'
     }
   }
 };

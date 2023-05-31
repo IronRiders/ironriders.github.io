@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf docs",
+    "clean": "rimraf site",
     "build": "eleventy",
     "start": "eleventy --serve"
   },

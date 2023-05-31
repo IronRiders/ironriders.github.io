@@ -1,4 +1,4 @@
 _site/
 .cache/
-docs/
+site/
 node_modules/
