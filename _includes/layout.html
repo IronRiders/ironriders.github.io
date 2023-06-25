@@ -11,41 +11,51 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="/">
-                <img src="/img/logo-100.png">
-            </a>
-            <div class="text">
-                <h1>The Iron Riders</h1>
-                <h2>FRC Team 4180</h2>
+        <div class="row g-0">
+            <div class="logo col-6">
+                <a href="/">
+                    <img src="/img/logo-100.png">
+                </a>
+                <div class="text">
+                    <h1>The Iron Riders</h1>
+                    <h2>FRC Team 4180</h2>
+                </div>
             </div>
+            <nav class="col-6">
+                <a href="/">Home</a>
+                <a href="/team">Our Team</a>
+                <a href="/sponsors">Our Sponsors</a>
+                <a href="/resources">Resources</a>
+            </nav>
         </div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/team">Our Team</a>
-            <a href="/sponsors">Our Sponsors</a>
-            <a href="/resources">Resources</a>
-        </nav>
     </header>
 
-    <main>{{ content }}</main>
+    <main>
+        {{ content }}
+    </main>
 
     <footer>
-        <div>
-            <address>
-                The Iron Riders, FRC Team 4180<br/>
-                c/o Roosevelt High School<br/>
-                1410 NE 66th St<br/>
-                Seattle, WA 98115
-            </address>
+        <div class="row g-0">
+            <div class="col-6">
+                <address>
+                    The Iron Riders, FRC Team 4180<br/>
+                    c/o Roosevelt High School<br/>
+                    1410 NE 66th St<br/>
+                    Seattle, WA 98115
+                </address>
+            </div>
+            <div class="col-3">
+                <nav>
+                    <a href="https://store.ironriders.org">Store</a>
+                    <a href="/discord">Discord</a>
+                </nav>
+            </div>
+            <div class="col-3">
+                <nav>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <a href="https://store.ironriders.org">Store</a>
-            <a href="/discord">Discord</a>
-        </nav>
-        <nav>
-            <a href="/contact">Contact</a>
-        </nav>
     </footer>
 </body>
 
