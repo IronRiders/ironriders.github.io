@@ -4,7 +4,7 @@ const Image = require('@11ty/eleventy-img');
 const path = require('path');
 
 (async () => {
-  let images = glob.globSync('./assets/*.{jpg,jpeg,png,webp}')
+  let images = glob.globSync('./assets/**/*.{jpg,jpeg,png,webp}')
   images.forEach(file => {
     Image(file, {
       filenameFormat: function (id, src, width, format, options) { 
