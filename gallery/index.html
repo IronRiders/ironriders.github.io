@@ -3,58 +3,83 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/style/layout.css">
     <link rel="stylesheet" href="/style/page.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Gallery - The Iron Riders, FRC Team 4180</title>
 </head>
 
 <body>
     <header>
-        <div class="row g-0">
-            <div class="logo col-6">
-                <a href="/">
-                    <img src="/img/logo-100.png">
-                </a>
-                <div class="text">
-                    <h1>The Iron Riders</h1>
-                    <h2>FRC Team 4180</h2>
+        <nav class="navbar navbar-dark">
+            <div class="navbar-brand">
+                <div class="logo d-flex align-items-center">
+                    <a href="/">
+                        <img src="/img/logo-100.png">
+                    </a>
+                    <div class="flex-column">
+                        <h1>
+                            <span class="d-none d-lg-inline">The</span>
+                            Iron Riders
+                        </h1>
+                        <h2 class="d-none d-lg-block">FRC Team 4180</h2>
+                    </div>
                 </div>
             </div>
-            <nav class="col-6">
-                <a href="/">Home</a>
-                <a href="/team">Our Team</a>
-                <a href="/sponsors">Our Sponsors</a>
-                <a href="/gallery">Gallery</a>
-                <a href="/resources">Resources</a>
-            </nav>
-        </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsableNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-expand-lg d-none d-lg-block col-lg-6">
+                <ul class="nav navbar-nav flex-lg-row">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/team">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sponsors">Our Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse navbar-expand-lg" id="collapsableNavbar">
+                <ul class="nav navbar-nav flex-lg-row">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/team">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sponsors">Our Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <div class="container gallery"> <div class="row"> <div class="col-12"><h1>Gallery </h1></div></div><div class="row"> <div class="col-6"> <h2>Charged Up (2022 - 2023)</h2><a href="/gallery/charged-up"><img height="500px" src="https://lh3.googleusercontent.com/pw/AJFCJaW1C5hrYVExCP-jvuGIc14DIVj1BrEmZZ4MNmLZhTGpB9ZwzDcc6h99B7sox9BIFOja1XD3w8JNGqPz9diEwffnQin3wVnBKBWQrat89AiozWvwmUem5TvYtj4DT5vJYWGiO7tDvnKxGZMeofgfPi_L=w1332-h1968-s-no"></a></div></div></div>
+        <div class="container gallery"> <div class="row"> <div class="col-12"><h1>Gallery </h1></div></div><div class="row"> <div class="col-6"> <h2>Charged Up (2022 - 2023)</h2><a href="/gallery/charged-up"><img src="/img/2023-cobol-500.png"></a></div><div class="col-6"> <h2>Rapid React (2021 - 2022)</h2><a href="/gallery/rapid-react"><img src="/img/2022-rolo-500.png"></a></div><!--.col-6 h2 Infinite Recharge (2020 - 2021)
+a(href="/gallery/infinite-recharge-2")
+  img(height="500px", src="https://lh3.googleusercontent.com/pw/AJFCJaW1C5hrYVExCP-jvuGIc14DIVj1BrEmZZ4MNmLZhTGpB9ZwzDcc6h99B7sox9BIFOja1XD3w8JNGqPz9diEwffnQin3wVnBKBWQrat89AiozWvwmUem5TvYtj4DT5vJYWGiO7tDvnKxGZMeofgfPi_L=w1332-h1968-s-no")
+--><div class="col-6"> <h2>Infinite Recharge (2019 - 2020)</h2><a href="/gallery/infinite-recharge"><img src="/img/2020-stardust-500.png"></a></div><div class="col-6"> <h2>Deep Space (2018 - 2019)</h2><a href="/gallery/deep-space"><img src="/img/2019-athena-500.png"></a></div><div class="col-6"> <h2>Power Up (2017 - 2018)</h2><a href="/gallery/power-up"><img src="/img/2018-glorified-table-500.png"></a></div><div class="col-6"> <h2>Steamworks (2016 - 2017)</h2><a href="/gallery/steamworks"><img src="/img/2017-rampe-grande-500.png"></a></div><div class="col-6"> <h2>Stronghold (2015 - 2016)</h2><a href="/gallery/stronghold"><img src="/img/2016-silver-500.png"></a></div><div class="col-6"> <h2>Recycle Rush (2014 - 2015)</h2><a href="/gallery/recycle-rush"><img src="/img/2015-recycle-rush-500.png"></a></div><div class="col-6"> <h2>Aerial Assist (2013 - 2014)</h2><a href="/gallery/aerial-assist"><img src="/img/2014-aerial-assist-500.png"></a></div><div class="col-6"> <h2>Ultimate Ascent (2012 - 2013)</h2><a href="/gallery/ultimate-ascent"><img src="/img/2013-ultimate-ascent-500.png"></a></div><div class="col-6"> <h2>Rebund Rumble (2011 - 2012)</h2><a href="/gallery/rebound-rumble"><img src="/img/2012-rebound-rumble-500.png"></a></div></div></div>
     </main>
 
     <footer>
         <div class="row g-0">
-            <div class="col-6">
+            <div class="col-12 col-lg-6 order-lg-2">
+                <nav class="navbar navbar-dark">
+                    <div class="navbar-expand">
+                        <ul class="nav navbar-nav flex-lg-row">
+                            <li class="nav-item"><a class="nav-link" href="https://store.ironriders.org">Store</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/discord">Discord</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12 col-lg-6">
                 <address>
                     The Iron Riders, FRC Team 4180<br/>
                     c/o Roosevelt High School<br/>
                     1410 NE 66th St<br/>
                     Seattle, WA 98115
                 </address>
-            </div>
-            <div class="col-3">
-                <nav>
-                    <a href="https://store.ironriders.org">Store</a>
-                    <a href="/discord">Discord</a>
-                </nav>
-            </div>
-            <div class="col-3">
-                <nav>
-                    <a href="/contact">Contact</a>
-                </nav>
             </div>
         </div>
     </footer>
