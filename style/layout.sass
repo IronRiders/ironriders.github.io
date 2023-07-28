@@ -14,26 +14,23 @@ body
 header
   background-color: rgb(33, 61, 28)
   color: rgb(253, 194, 15)
-  flex: 0 0 92px
 
   .logo
-    display: flex
+    color: rgb(253, 194, 15)
 
     img
-      // 25% lockup per branding guide
-      padding: 25px
+      padding: 0 1em 0 1em
 
-    .text
-      align-self: center
+  .navbar
+    .navbar-brand
+      margin-right: 0
 
-      h1
-        margin-bottom: 0.25em
+    .navbar-toggler
+      margin-right: 1em
 
-  nav
-    align-self: center
-    display: flex
-    justify-content: space-evenly
-
+    .nav-item
+      padding-left: 1em
+      
     a
       color: rgb(255, 255, 255) !important
 
@@ -45,15 +42,10 @@ footer
   background-color: rgb(33, 61, 28)
   color: rgb(255, 255, 255) !important
   padding: 1em
-  padding-left: 25px
 
   a
     color: rgb(255, 255, 255) !important
 
-  nav
-    display: flex
-    flex-direction: column
-    align-self: center
-    
-    a
-      flex: 1
+.navbar
+  a:hover
+    text-decoration: underline
