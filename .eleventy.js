@@ -20,6 +20,7 @@ const path = require('path');
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.setPugOptions({ doctype: 'html' });
+  eleventyConfig.addPassthroughCopy('CNAME');
 
   return {
     dir: {
