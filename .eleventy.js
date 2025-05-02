@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.setPugOptions({ doctype: 'html' });
   eleventyConfig.addPassthroughCopy('CNAME');
+  eleventyConfig.addPassthroughCopy({ "assets/favicon.ico" : "/" } );
 
   return {
     dir: {
