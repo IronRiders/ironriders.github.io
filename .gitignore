@@ -1,2 +1,4 @@
 _site/
 .cache/
+.site/
+.node_modules/
